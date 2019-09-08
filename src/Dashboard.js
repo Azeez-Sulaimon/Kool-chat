@@ -9,6 +9,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import {CTX} from './Store';
+import './App.css';
 
 const useStyles = makeStyles(theme => ({
     root: {
@@ -22,13 +23,15 @@ const useStyles = makeStyles(theme => ({
     },
     topicsWindow: {
        width: '30%',
-       height: '300px',
-       borderRight: '1px solid grey'
+       height: '350px',
+       borderRight: '1px solid grey',
+       backgroundColor: '#5ea3d0',
     },
     chatWindow: {
        width: '70%',
        height: '300px',
-       padding: '20px'
+       padding: '20px',
+       
     },
     chatBox: {
        width: '85%'
@@ -80,8 +83,8 @@ export default function Dashboard() {
                    {
                       allChats[activeTopic].map((chat, i) => (
                        <div className={classes.flex} key={i}>
-                        <Chip label={chat.from} className={classes.chip} />
-                        <Typography variant='body1' gutterBottom>{chat.msg}</Typography>
+                        <Chip label={chat.from} className="message-username" />
+                        <Typography variant='body1' className="message-text" gutterBottom>{chat.msg}</Typography>
                        </div>
                       ))
                   }
