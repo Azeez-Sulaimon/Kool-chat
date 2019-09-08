@@ -57,12 +57,14 @@ export default function Dashboard() {
 
     return ( 
         <Paper className={classes.root}>
-        <Typography variant="h4" component="h4">
-         Kool Chat
-        </Typography>
-        <Typography variant="h6" component="h6">
+          <div>
+           <h4 className="title">Kool Chat</h4>
+            <h6 className="topic">{activeTopic}</h6>
+          </div>
+        
+        {/* <Typography variant="h6" component="h6">
           {activeTopic}
-        </Typography>
+        </Typography> */}
         <div className={classes.flex}>
             <div className={classes.topicsWindow}>
               <List>

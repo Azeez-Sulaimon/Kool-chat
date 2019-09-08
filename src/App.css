@@ -37,6 +37,39 @@ html, body {
       "n f f f f f";
 }
 
+h6 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 30px;
+  padding: 20px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+}
+  .topic {
+  color: #2c2c2c;
+  background-color: #d5d5d5;
+  letter-spacing: .05em;
+  text-shadow: 
+    4px 4px 0px #d5d5d5, 
+    7px 7px 0px rgba(0, 0, 0, 0.2);
+    margin: 5px 0 0 0;
+}
+
+
+  .title{
+    background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+    color: red;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: arial, helvetica;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+
 .new-room-form {
   grid-area: n;
 }
